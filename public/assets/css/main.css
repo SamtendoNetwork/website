@@ -1,22 +1,22 @@
 :root {
 	/* 1 is the base color, <1 are darker variations and >1 are lighter */
 
-	--bg-shade-0: #131733;
-	--bg-shade-1: #1B1F3B;
-	--bg-shade-2: #23274A;
+	--bg-shade-0: #003253;
+	--bg-shade-1: #00548b;
+	--bg-shade-2: #0074c2;
 	--bg-shade-2-5: #2D3258;
 	--bg-shade-3: #373C65;
 	--bg-shade-3-5: #404673;
 	--bg-shade-4: #494F81;
 
-	--accent-shade-0: #673DB6;
-	--accent-shade-1: #9D6FF3;
-	--accent-shade-2: #A185D6;
-	--accent-shade-3: #CAB1FB;
+	--accent-shade-0: #4169E1;
+	--accent-shade-1: #ffffff;
+	--accent-shade-2: #8BA8E8;
+	--accent-shade-3: #B8D4FF;
 
-	--text-shade-0: #8990C1;
-	--text-shade-1: #A1A8D9;
-	--text-shade-2: #CAC1F5;
+	--text-shade-0: #ffffff;
+	--text-shade-1: #ffffff;
+	--text-shade-2: #00a0d1;
 	--text-shade-3: #fff;
 
 	--green-shade-0: #37a985;

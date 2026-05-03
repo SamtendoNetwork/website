@@ -1,4 +1,4 @@
-process.title = 'Pretendo - Website';
+process.title = 'Samtendo - Website';
 process.on('SIGTERM', () => {
 	process.exit(0);
 });
@@ -111,14 +111,14 @@ const routes = {
 };
 
 app.use('/', routes.home);
-app.use('/terms', routes.terms);
+//app.use('/terms', routes.terms);
 app.use('/faq', routes.faq);
 app.use('/docs', routes.docs);
 app.use('/progress', routes.progress);
-app.use('/account', routes.account);
-app.use('/localization', routes.localization);
-app.use('/blog', routes.blog);
-app.use('/nso-legacy-pack', routes.aprilfools);
+//app.use('/account', routes.account);
+//app.use('/localization', routes.localization);
+//app.use('/blog', routes.blog);
+//app.use('/nso-legacy-pack', routes.aprilfools);
 
 logger.info('Creating 404 status handler');
 // This works because it is the last router created

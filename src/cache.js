@@ -86,7 +86,7 @@ async function getGitHubProjectsV2(after = '') {
 	let projects = [];
 
 	const data = await github.request(getProjectsV2GQL, {
-		orgName: 'PretendoNetwork',
+		orgName: 'SamtendoNetwork',
 		cursor: after
 	});
 

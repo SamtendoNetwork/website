@@ -19,7 +19,7 @@ header::before {
 	left: -10vw;
 	width: 120vw;
 	height: calc(100% + 35px + 35px);
-	background: rgba(27, 31, 59, 0.98);
+	background: rgba(74, 191, 255, 1);
 	transition: background 180ms;
 }
 header.transparent,

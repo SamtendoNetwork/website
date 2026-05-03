@@ -1,19 +1,19 @@
 {
-	"name": "Pretendo Network",
-	"short_name": "Pretendo Network",
+	"name": "Samtendo Network",
+	"short_name": "Samtendo Network",
 	"icons": [
 		{
-			"src": "https://pretendo.network/assets/images/icons/android-chrome-192x192.png",
+			"src": "https://cdn.samtendo.net/images/NewSamtendoCircle.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "https://pretendo.network/assets/images/icons/android-chrome-384x384.png",
+			"src": "https://cdn.samtendo.net/images/NewSamtendoCircle.png",
 			"sizes": "384x384",
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#1b1f3b",
-	"background_color": "#1b1f3b",
+	"theme_color": "#4ABFFF",
+	"background_color": "#4ABFFF",
 	"display": "standalone"
 }
