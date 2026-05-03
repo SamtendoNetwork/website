@@ -19,17 +19,17 @@ header::before {
 	left: -10vw;
 	width: 120vw;
 	height: calc(100% + 35px + 35px);
-	background: rgba(74, 191, 255, 1);
+	background: rgb(0, 166, 255);
 	transition: background 180ms;
 }
 header.transparent,
 header.transparent::before {
 	background: rgba(27, 31, 59, 0);
 }
-header.dropdown-active {
+/* header.dropdown-active {
 	background: rgba(27, 31, 59, 0.98);
 	box-shadow: 0 0 0 600vw rgba(27, 31, 59, 0.8);
-}
+} */
 header .dropdown-arrow {
 	opacity: 0;
 	position: absolute;

@@ -8,7 +8,7 @@ const { Routes: DiscordRoutes } = require('discord-api-types/v10');
 const merge = require('lodash.merge');
 const config = require('./config');
 const logger = require('./logger');
-const baseLocale = require(`${__dirname}/../locales/en_US.json`);
+const baseLocale = require(`${__dirname}/../locales/en_GB.json`);
 
 const discordRest = new DiscordRest({ version: '10' }).setToken(config.discord.bot_token);
 
@@ -28,14 +28,14 @@ function getLocale(locale) {
 		return finalLocale;
 	}
 
-	logger.warn(`Could not find locale ${localeFileName}! Loading en_US`);
+	logger.warn(`Could not find locale ${localeFileName}! Loading en_GB`);
 
 	return baseLocale;
 }
 
 function getRawDocs(locale, subpath, pageName) {
 	const localePath = path.join(__dirname, '../docs', locale.replace('-', '_'), subpath, `${pageName}.md`);
-	const defaultPath = path.join(__dirname, '../docs', 'en_US', subpath, `${pageName}.md`);
+	const defaultPath = path.join(__dirname, '../docs', 'en_GB', subpath, `${pageName}.md`);
 
 	if (fs.existsSync(localePath)) {
 		return {

@@ -27,7 +27,8 @@
 	"hero": {
 		"subtitle": "Bringing people back",
 		"title": "Together",
-		"text": "Samtendo Network is a project that aims to revive now defunct online servers for the 3DS and Wii U.",
+		"text1": "The age of getting home to your Wii U and hopping on Minecraft with your friends is over.",
+		"text2": "Samtendo Network is a project that aims to fix that problem by reviving now defunct online servers for the 3DS and Wii U.",
 		"buttons": {
 			"readMore": "Tell me more!"
 		}
@@ -35,7 +36,7 @@
 	"aboutUs": {
 		"title": "About us",
 		"paragraphs": [
-			"Samtendo is an open-source project that aims to recreate Nintendo Network for the 3DS and Wii U using clean-room reverse engineering.",
+			"Samtendo Network is an open-source project that aims to recreate Nintendo Network for the 3DS and Wii U using clean-room reverse engineering.",
 			"Since our services are free and open source, they will exist long into the future."
 		]
 	},
@@ -93,8 +94,8 @@
 				"caption": "A Miiverse revival, keeping the original Wii U style but with new features!"
 			},
 			{
-				"title": "samShop",
-				"caption": "Relive that sweet, sweet eShop experience with our revival server!"
+				"title": "Multi-platform support",
+				"caption": "Our services are accessible on many platforms, even though we don't officially support them. Try using Samverse on a Switch! (it works!)"
 			}
 		],
 		"title": "What we make"
@@ -134,6 +135,11 @@
 				"name": "Hauber",
 				"caption": "Samverse moderator + German translations",
 				"picture": "https://cdn.samtendo.net/images/hauber.png"
+			},
+			{
+				"name": "Senne",
+				"caption": "Support agent",
+				"picture": "https://cdn.samtendo.net/images/senne.png"
 			}
 		]
 	},
@@ -166,6 +172,29 @@
 				"name": "Evie",
 				"caption": "Moral support",
 				"picture": "https://cdn.samtendo.net/images/evie.png"
+			},
+						{
+				"name": "Beau",
+				"caption": "Tomodachi Life enthusiast",
+				"picture": "https://cdn.samtendo.net/images/beau.png"
+			},
+			{
+				"name": "mrjvs",
+				"caption": "Original website development",
+				"picture": "https://github.com/mrjvs.png",
+				"github": "https://mrjvs.com/"
+			},
+			{
+				"name": "jipfr",
+				"caption": "Original website development",
+				"picture": "https://github.com/jipfr.png",
+				"github": "https://jipfr.nl/"
+			},
+			{
+				"name": "limes.pink",
+				"caption": "Original website development",
+				"picture": "https://github.com/limesdotpink.png",
+				"github": "https://limes.pink/"
 			}
 		]
 	},
