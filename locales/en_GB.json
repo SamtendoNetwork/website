@@ -36,8 +36,8 @@
 	"aboutUs": {
 		"title": "About us",
 		"paragraphs": [
-			"Samtendo Network is an open-source project that aims to recreate Nintendo Network for the 3DS and Wii U using clean-room reverse engineering.",
-			"Since our services are free and open source, they will exist long into the future."
+			"Samtendo Network is a mostly open-source project that aims to recreate Nintendo Network for the 3DS and Wii U using clean-room reverse engineering.",
+			"We are a small team of volunteers who work on this project in our free time. However, our one aim is to bring people back to the couch on Mario Kart 8."
 		]
 	},
 	"progress": {
