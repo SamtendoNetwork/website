@@ -21,6 +21,7 @@
 			}
 		},
 		"progress": "Progress",
+		"status": "Status",
 		"account": "Account",
 		"forum": "Forum"
 	},
