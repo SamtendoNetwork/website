@@ -1,7 +1,7 @@
 {
 	"http": {
-		"port": 3000,
-		"base_url": "http://localhost:3000"
+		"port": 3001,
+		"base_url": "http://localhost:3001"
 	},
 	"github": {
 		"graphql_token": "ghp_..."

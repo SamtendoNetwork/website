@@ -59,7 +59,7 @@ router.get('/', requireLoginMiddleware, async (request, response) => {
 		try {
 			renderData.discordUser = await discordRest.get(DiscordRoutes.user(account.connections.discord.id));
 		} catch (error) {
-			response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+			response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		}
 	} else {
 		// If no Discord account linked, generate an auth URL
@@ -89,14 +89,14 @@ router.post('/login', async (request, response) => {
 	try {
 		const tokens = await util.login(username, password);
 
-		response.cookie('refresh_token', tokens.refresh_token, { domain: '.pretendo.network' });
-		response.cookie('access_token', tokens.access_token, { domain: '.pretendo.network' });
-		response.cookie('token_type', tokens.token_type, { domain: '.pretendo.network' });
+		response.cookie('refresh_token', tokens.refresh_token, { domain: '.samtendo.net' });
+		response.cookie('access_token', tokens.access_token, { domain: '.samtendo.net' });
+		response.cookie('token_type', tokens.token_type, { domain: '.samtendo.net' });
 
 		response.redirect(request.redirect || '/account');
 	} catch (error) {
 		console.log(error);
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account/login');
 	}
 });
@@ -109,9 +109,9 @@ router.get('/register', async (request, response) => {
 		error: request.cookies.error_message
 	};
 
-	response.clearCookie('email', { domain: '.pretendo.network' });
-	response.clearCookie('username', { domain: '.pretendo.network' });
-	response.clearCookie('mii_name', { domain: '.pretendo.network' });
+	response.clearCookie('email', { domain: '.samtendo.net' });
+	response.clearCookie('username', { domain: '.samtendo.net' });
+	response.clearCookie('mii_name', { domain: '.samtendo.net' });
 
 	response.render('account/register', renderData);
 });
@@ -125,9 +125,9 @@ router.post('/register', async (request, response) => {
 	// * and no data is stored for blocked users
 	const ip = request.ip; // TODO - Enable `CF-IPCountry` in Cloudflare and only use this as a fallback
 
-	response.cookie('email', email, { domain: '.pretendo.network' });
-	response.cookie('username', username, { domain: '.pretendo.network' });
-	response.cookie('mii_name', mii_name, { domain: '.pretendo.network' });
+	response.cookie('email', email, { domain: '.samtendo.net' });
+	response.cookie('username', username, { domain: '.samtendo.net' });
+	response.cookie('mii_name', mii_name, { domain: '.samtendo.net' });
 
 	try {
 		const tokens = await util.register({
@@ -141,25 +141,25 @@ router.post('/register', async (request, response) => {
 			hCaptchaResponse
 		});
 
-		response.cookie('refresh_token', tokens.refresh_token, { domain: '.pretendo.network' });
-		response.cookie('access_token', tokens.access_token, { domain: '.pretendo.network' });
-		response.cookie('token_type', tokens.token_type, { domain: '.pretendo.network' });
+		response.cookie('refresh_token', tokens.refresh_token, { domain: '.samtendo.net' });
+		response.cookie('access_token', tokens.access_token, { domain: '.samtendo.net' });
+		response.cookie('token_type', tokens.token_type, { domain: '.samtendo.net' });
 
-		response.clearCookie('email', { domain: '.pretendo.network' });
-		response.clearCookie('username', { domain: '.pretendo.network' });
-		response.clearCookie('mii_name', { domain: '.pretendo.network' });
+		response.clearCookie('email', { domain: '.samtendo.net' });
+		response.clearCookie('username', { domain: '.samtendo.net' });
+		response.clearCookie('mii_name', { domain: '.samtendo.net' });
 
 		response.redirect(request.redirect || '/account');
 	} catch (error) {
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account/register');
 	}
 });
 
 router.get('/logout', async (_request, response) => {
-	response.clearCookie('refresh_token', { domain: '.pretendo.network' });
-	response.clearCookie('access_token', { domain: '.pretendo.network' });
-	response.clearCookie('token_type', { domain: '.pretendo.network' });
+	response.clearCookie('refresh_token', { domain: '.samtendo.net' });
+	response.clearCookie('access_token', { domain: '.samtendo.net' });
+	response.clearCookie('token_type', { domain: '.samtendo.net' });
 
 	response.redirect('/');
 });
@@ -171,7 +171,7 @@ router.get('/forgot-password', async (request, response) => {
 		error_message: request.cookies.error_message
 	};
 
-	response.clearCookie('input', { domain: '.pretendo.network' });
+	response.clearCookie('input', { domain: '.samtendo.net' });
 
 	response.render('account/forgot-password', renderData);
 });
@@ -179,7 +179,7 @@ router.get('/forgot-password', async (request, response) => {
 router.post('/forgot-password', async (request, response) => {
 	const { input, 'h-captcha-response': hCaptchaResponse } = request.body;
 
-	response.cookie('input', input, { domain: '.pretendo.network' });
+	response.cookie('input', input, { domain: '.samtendo.net' });
 
 	try {
 		await util.forgotPassword({
@@ -187,13 +187,13 @@ router.post('/forgot-password', async (request, response) => {
 			hCaptchaResponse
 		});
 
-		response.clearCookie('input', { domain: '.pretendo.network' });
+		response.clearCookie('input', { domain: '.samtendo.net' });
 
-		response.cookie('success_message', 'An email has been sent.', { domain: '.pretendo.network' });
+		response.cookie('success_message', 'An email has been sent.', { domain: '.samtendo.net' });
 
 		response.redirect(request.redirect || '/account/forgot-password');
 	} catch (error) {
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account/forgot-password');
 	}
 });
@@ -217,7 +217,7 @@ router.get('/connect/discord', requireLoginMiddleware, async (request, response)
 			grantType: 'authorization_code'
 		});
 	} catch {
-		response.cookie('error_message', 'Invalid Discord authorization code. Please try again', { domain: '.pretendo.network' });
+		response.cookie('error_message', 'Invalid Discord authorization code. Please try again', { domain: '.samtendo.net' });
 		return response.redirect('/account');
 	}
 
@@ -242,10 +242,10 @@ router.get('/connect/discord', requireLoginMiddleware, async (request, response)
 			}
 		}
 
-		response.cookie('success_message', 'Discord account linked successfully', { domain: '.pretendo.network' });
+		response.cookie('success_message', 'Discord account linked successfully', { domain: '.samtendo.net' });
 		return response.redirect('/account');
 	} catch (error) {
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account');
 	}
 });
@@ -271,10 +271,10 @@ router.get('/remove/discord', requireLoginMiddleware, async (request, response) 
 			}
 		}
 
-		response.cookie('success_message', 'Discord account removed successfully', { domain: '.pretendo.network' });
+		response.cookie('success_message', 'Discord account removed successfully', { domain: '.samtendo.net' });
 		return response.redirect('/account');
 	} catch (error) {
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account');
 	}
 });
@@ -362,7 +362,7 @@ router.post('/stripe/checkout/:priceId', requireLoginMiddleware, async (request,
 	const pnid = await database.PNID.findOne({ pid });
 
 	if (pnid.get('access_level') >= 2) {
-		response.cookie('error_message', 'Staff members do not need to purchase tiers', { domain: '.pretendo.network' });
+		response.cookie('error_message', 'Staff members do not need to purchase tiers', { domain: '.samtendo.net' });
 		return response.redirect('/account');
 	}
 
@@ -384,7 +384,7 @@ router.post('/stripe/checkout/:priceId', requireLoginMiddleware, async (request,
 	} catch (error) {
 		// Maybe we need a dedicated error page?
 		// Or handle this as not cookies?
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 
 		return response.redirect('/account');
 	}
@@ -419,13 +419,13 @@ router.post('/stripe/unsubscribe', requireLoginMiddleware, async (request, respo
 		} catch (error) {
 			logger.error(`Error canceling old user subscription | ${pnid.get('connections.stripe.customer_id')}, ${pid}, ${subscriptionId} | - ${error.message}`);
 
-			response.cookie('error_message', 'Error canceling subscription! Contact support if issue persists', { domain: '.pretendo.network' });
+			response.cookie('error_message', 'Error canceling subscription! Contact support if issue persists', { domain: '.samtendo.net' });
 
 			return response.redirect('/account');
 		}
 	}
 
-	response.cookie('success', `Unsubscribed from ${tierName}`, { domain: '.pretendo.network' });
+	response.cookie('success', `Unsubscribed from ${tierName}`, { domain: '.samtendo.net' });
 	return response.redirect('/account');
 });
 
@@ -490,7 +490,7 @@ router.get('/sso/discourse', async (request, response, next) => {
 			return response.redirect(`${decodedPayload.get('return_sso_url')}?${query}`);
 		} catch (error) {
 			console.log(error);
-			response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+			response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 			return response.redirect('/account/logout');
 		}
 	}
@@ -540,9 +540,9 @@ router.post('/sso/discourse', async (request, response, next) => {
 	try {
 		const tokens = await util.login(username, password);
 
-		response.cookie('refresh_token', tokens.refresh_token, { domain: '.pretendo.network' });
-		response.cookie('access_token', tokens.access_token, { domain: '.pretendo.network' });
-		response.cookie('token_type', tokens.token_type, { domain: '.pretendo.network' });
+		response.cookie('refresh_token', tokens.refresh_token, { domain: '.samtendo.net' });
+		response.cookie('access_token', tokens.access_token, { domain: '.samtendo.net' });
+		response.cookie('token_type', tokens.token_type, { domain: '.samtendo.net' });
 
 		// * Need to set these here so that getUserAccountData can see them
 		request.cookies.refresh_token = tokens.refresh_token;
@@ -574,7 +574,7 @@ router.post('/sso/discourse', async (request, response, next) => {
 		return response.redirect(`${decodedPayload.get('return_sso_url')}?${query}`);
 	} catch (error) {
 		console.log(error);
-		response.cookie('error_message', error.message, { domain: '.pretendo.network' });
+		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account/login');
 	}
 });

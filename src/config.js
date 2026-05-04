@@ -18,7 +18,7 @@ module.exports = {
 	http: {
 		base_url: jsonConfig.http.base_url,
 		port: jsonConfig.http.port,
-		allowed_redirection_suffixes: Array.isArray(jsonConfig.http.allowed_redirection_suffixes) ? jsonConfig.http.allowed_redirection_suffixes : ['pretendo.network']
+		allowed_redirection_suffixes: Array.isArray(jsonConfig.http.allowed_redirection_suffixes) ? jsonConfig.http.allowed_redirection_suffixes : ['samtendo.net']
 	},
 	github: {
 		graphql_token: jsonConfig.github.graphql_token
