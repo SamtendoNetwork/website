@@ -14,12 +14,13 @@
 			"captions": {
 				"credits": "see kittehs",
 				"about": "seez infomations",
-				"faq": "frekuentwy askud kweshtunz",
+				"faq": "haz qwestionz?",
 				"progress": "see projekt progrez",
 				"blog": "new thingzz, but smol"
 			}
 		},
 		"progress": "eta wen",
+		"status": "iz workin??",
 		"faq": "faqz"
 	},
 	"hero": {
@@ -46,7 +47,7 @@
 		"QAs": [
 			{
 				"question": "whut iz samtender??",
-				"answer": "samtender iz a sethru meanie netwrk replazment 4 wee yu an thre d s. kittehs want to kep gaemin, so we maek it again!!"
+				"answer": "samtender iz a prety sethru meanie netwrk replazment 4 wee yu an thre d s. kittehs want to kep gaemin, so we maek it again!!"
 			},
 			{
 				"question": "kan i keep my meanie netwrk id 4 samtender?",
@@ -54,7 +55,7 @@
 			},
 			{
 				"question": "how doez kitteh use samtender??",
-				"answer": "yey!! get startd wif samtender be readng <a href=\"/docs/install\">instructionzzz</a>!!"
+				"answer": "yey!! get startd wif samtender be readng da wiki!!"
 			},
 			{
 				"question": "eta wen 4 gaem??",
@@ -70,11 +71,11 @@
 			},
 			{
 				"question": "doez samtender work on me faek gaemr!?",
-				"answer": "da C-EMU workz wif da samtender in s-..\"settingz\"? dey have <a href=\"https://pretendo.network/docs/install/cemu\">da l33t guide</a>, go read dat~<br>sum 3 dee ess gamurz might w3rk, but kitteh not suer!!! citra no worky :("
+				"answer": "no worky :( (yet)"
 			},
 			{
 				"question": "can kitteh gaem on othr kitteh gaemin??",
-				"answer": "nonO!! kitteh can only gaem on teh wee yu an thre d s! <a href=\\\"https://wiimmfi.de/\\\" target=\\\"_blank\\\">wee has wiimmfi tho!!</a>"
+				"answer": "nonO!! kitteh can only gaem on teh wee yu an thre d s! sory!!"
 			},
 			{
 				"question": "doez kitteh need hax to gaem?!",
@@ -82,7 +83,7 @@
 			},
 			{
 				"question": "if kitteh ban'd from teh meanie netwrk, iz still ban'd on samtender?",
-				"answer": "no!! yu is not ban'd! ther is rulez tho, so yu can stil get bananad!!"
+				"answer": "no!! yu is not ban cuz we nice :P ther is rulez tho, so yu can stil get bananad!!"
 			},
 			{
 				"question": "can kitteh cheat on samtender gamez?",
@@ -96,187 +97,65 @@
 		"text": "we gots lotz of stuffs! herez sum stuffs.",
 		"cards": [
 			{
-				"title": "onlien gamez!!",
+				"title": "nearli!! onlien gamez!!",
 				"caption": "play ur gaemz wit othr kittehs!"
 			},
 			{
 				"title": "kittehverse",
-				"caption": "a remeow of mewverse if kittehs made it shiny!!"
+				"caption": "a remeow of mewverse!!"
 			},
 			{
-				"title": "cemu gaemin!!",
+				"title": "lot of gaemins!!",
 				"caption": "gaem on ur shiny magik box!!"
 			}
 		]
 	},
 	"credits": {
-		"title": "dev kittehs",
-		"text": "see kittehz who maek samtender!!",
+		"title": "peepul!!",
+		"text": "i liek deez peepul a lot!!!1!! they do all da stuffs!!",
 		"people": [
 			{
-				"caption": "da big cheez",
-				"name": "jon samtender",
-				"picture": "https://github.com/jonbarrow.png",
-				"github": "https://github.com/jonbarrow"
+				"name": "samzter!!",
+				"caption": "ownr of samtender!! :D",
+				"picture": "https://github.com/sam51210.png",
+				"github": "https://github.com/sam51210"
 			},
 			{
-				"caption": "miiveres kitteh!",
-				"name": "jem :3",
-				"picture": "https://github.com/caramelkat.png",
-				"github": "https://github.com/CaramelKat"
+				"name": "rezrf!",
+				"caption": "othr ownr of samtender!1!!!",
+				"picture": "https://cdn.samtendo.net/images/resarf.png",
+				"github": "https://github.com/ResarfGaming"
 			},
 			{
-				"caption": "wii u foxish!!!!!",
-				"name": "lucakitteh!! ^^",
-				"picture": "https://github.com/ashquarky.png",
-				"github": "https://github.com/ashquarky"
+				"name": "BEOW!!1!!!",
+				"caption": "tiktok kitteh",
+				"picture": "https://cdn.samtendo.net/images/beau.png"
 			},
 			{
-				"caption": "rezearch kitteh",
-				"name": "supah marioh da vroom",
-				"picture": "https://github.com/supermariodabom.png",
-				"github": "https://github.com/SuperMarioDaBom"
+				"name": "eeevee!!",
+				"caption": "dizcord kitteh",
+				"picture": "https://cdn.samtendo.net/images/evie.png"
 			},
 			{
-				"caption": "onlien kitteh ^w^",
-				"name": "purple lemonzz :3",
-				"picture": "https://github.com/limesdotpink.png",
-				"github": "https://github.com/limesdotpink"
+				"name": "girimvorex!!",
+				"caption": "servr kitteh",
+				"picture": "https://cdn.samtendo.net/images/grimvortex.png"
 			},
 			{
-				"caption": "servah debeloper kitteh!!!",
-				"name": "camera creature 2k!!!!",
-				"picture": "https://cdn.discordapp.com/avatars/191370953807233024/0311b61e2009c1576828dd2e9a59d72e.png?size=128",
-				"github": "https://github.com/shutterbug2000"
+				"name": "horber",
+				"caption": "samver kitteh",
+				"picture": "https://cdn.samtendo.net/images/hauber.png"
 			},
 			{
-				"caption": "gaem history saveh kiteh,,",
-				"name": "billeh!",
-				"picture": "https://github.com/InternalLoss.png",
-				"github": "https://github.com/InternalLoss"
-			},
-			{
-				"caption": "server dev kitteh o.o",
-				"name": "daneh zappy...",
-				"picture": "https://github.com/danielectra.png",
-				"github": "https://github.com/DaniElectra"
-			},
-			{
-				"caption": "website servah kitteh!! ^^",
-				"name": "og kitteh!!!!",
-				"picture": "https://github.com/hauntii.png",
-				"github": "https://github.com/hauntii"
-			},
-			{
-				"caption": "deb..ops..? kitteh!",
-				"name": "matteh",
-				"picture": "https://github.com/MatthewL246.png",
-				"github": "https://github.com/MatthewL246"
-			},
-			{
-				"caption": "servah kitteh n speedi kitteh!",
-				"name": "wolfiiii! ^^",
-				"picture": "https://github.com/wolfendale.png",
-				"github": "https://github.com/wolfendale"
-			},
-			{
-				"caption": "duel screeh reseacha!!",
-				"name": "traceh bored &gt;:(",
-				"picture": "https://github.com/TraceEntertains.png",
-				"github": "https://github.com/TraceEntertains"
+				"name": "sennemon!!1!",
+				"caption": "discord kitteh",
+				"picture": "https://cdn.samtendo.net/images/senne.png"
 			}
 		]
 	},
 	"specialThanks": {
-		"title": "speshul thx",
-		"text": "theze kittehs helpd!!",
-		"people": [
-			{
-				"name": "geethub contrwibutahs!!!!! uwu",
-				"caption": "wocawizawitwions n moar!!!!",
-				"picture": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-				"github": "https://github.com/PretendoNetwork"
-			},
-			{
-				"caption": "crunchii libwrary dev!!!",
-				"name": "uber whiskahs!!!!! (superwhiskers)",
-				"picture": "https://github.com/superwhiskers.png",
-				"github": "https://github.com/superwhiskers"
-			},
-			{
-				"caption": "duel scweeen debeprobah and pachket takher-apahter!",
-				"name": "staweh :3 (Stary)",
-				"picture": "https://github.com/Stary2001.png",
-				"github": "https://github.com/Stary2001"
-			},
-			{
-				"caption": "we steal their code :3",
-				"name": "green juxt!",
-				"picture": "https://github.com/rverseTeam.png",
-				"github": "https://twitter.com/rverseClub"
-			},
-			{
-				"special": "speshul thx",
-				"caption": "gawd of meanine weseawch!!!!",
-				"name": "kinneh!",
-				"picture": "https://cdn.discordapp.com/avatars/186572995848830987/b55c0d4e7bfd792edf0689f83a25d8ea.png?size=128",
-				"github": "https://github.com/Kinnay"
-			},
-			{
-				"caption": "icwn designah!!!!",
-				"name": "ninstah! ^w^",
-				"picture": "https://github.com/ninstar.png",
-				"github": "https://github.com/ninstar"
-			},
-			{
-				"caption": "gaem reseawchhh n dev!",
-				"name": "rambeh &gt;:3",
-				"picture": "https://github.com/EpicUsername12.png",
-				"github": "https://github.com/EpicUsername12"
-			},
-			{
-				"caption": "wiiuu pwatchy hacky! ^w^",
-				"name": "gary (cool one!)",
-				"picture": "https://github.com/GaryOderNichts.png",
-				"github": "https://github.com/GaryOderNichts"
-			},
-			{
-				"caption": "duaaalsccween haxorz!!!! owo",
-				"name": "zak is da 3ds beast",
-				"picture": "https://cdn.discordapp.com/avatars/219324395707957248/c62573fbd4d26c8b4724f54413df6960.png?size=128",
-				"github": "https://github.com/zaksabeast"
-			},
-			{
-				"caption": "servah maker!!! ^u^",
-				"name": "jvkitteh fr",
-				"picture": "https://github.com/mrjvs.png",
-				"github": "https://github.com/mrjvs"
-			},
-			{
-				"caption": "g-gopah??? gopah??????",
-				"name": "binareh mcbinareh ^w^",
-				"picture": "https://github.com/binaryoverload.png",
-				"github": "https://github.com/binaryoverload"
-			},
-			{
-				"caption": "splooner!",
-				"name": "slimon!!!",
-				"picture": "https://github.com/Simonx22.png",
-				"github": "https://github.com/Simonx22"
-			},
-			{
-				"caption": "splooner,,,",
-				"name": "porridge creature :3",
-				"picture": "https://github.com/OatmealDome.png",
-				"github": "https://github.com/OatmealDome"
-			},
-			{
-				"name": "gwitwub fwends!!",
-				"caption": "dey maek langwage gud u.u",
-				"picture": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-				"github": "https://github.com/PretendoNetwork"
-			}
-		]
+		"title": "epik peepul!!1!",
+		"text": "wee liek deez peepul a lot too!!1!! they do all da stuffs too!!"
 	},
 	"discordJoin": {
 		"text": "entr de discord for new infoz from kittehs 4 samtender!!",
@@ -452,6 +331,6 @@
 		"upgradePush": "u wanna become super kitteh and get kool perkz?? <a href=\"/account/upgrade\">upgrade now!!</a>"
 	},
 	"notfound": {
-		"description": "uh oh! we did a widdle fucky wucky! oopsie daisie! oh noes!!!!!"
+		"description": "uh oh! wer u tryin to go? this page dont existz!!"
 	}
 }
