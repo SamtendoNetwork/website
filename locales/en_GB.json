@@ -201,6 +201,11 @@
 				"name": "Resarf",
 				"caption": "Stress testing",
 				"picture": "https://cdn.samtendo.net/images/resarf.png"
+			},
+			{
+				"name": "memaem",
+				"caption": "Purchasing domains for Samtendo",
+				"picture": "https://discord.com/assets/411d8a698dd15ddf.png?size=1024&format=webp&quality=lossless"
 			}
 		]
 	},
