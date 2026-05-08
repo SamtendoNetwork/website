@@ -206,6 +206,11 @@
 				"name": "memaem",
 				"caption": "Purchasing domains for Samtendo",
 				"picture": "https://cdn.samtendo.net/images/memaem.png"
+			},
+			{
+				"name": "beebs",
+				"caption": "Boosting the Discord server since the start",
+				"picture": "https://cdn.samtendo.net/images/beebs.png"
 			}
 		]
 	},
