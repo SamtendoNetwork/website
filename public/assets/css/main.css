@@ -841,7 +841,10 @@ section.update-signup div.circle {
 		height: 400px;
 	}
 	img.n2ds {
-		width: 432px;
+		width: 600px;
+		height: 500px;
+		object-fit: contain;
+		display: block;
 	}
 	.deco svg {
 		transform: scale(0.8);
