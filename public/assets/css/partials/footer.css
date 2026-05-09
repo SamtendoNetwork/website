@@ -89,7 +89,7 @@ footer div.discord-server-card-wrapper .bandwidth-raccoon-wrapper {
 }
 footer div.discord-server-card-wrapper img.bandwidth-raccoon {
 	width: 192px;
-	height: 192px;
+	height: auto;
 	cursor: pointer;
 	transform: none;
 	transition: transform 150ms;
