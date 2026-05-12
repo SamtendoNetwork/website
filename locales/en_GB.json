@@ -211,6 +211,12 @@
 				"name": "beebs",
 				"caption": "Boosting the Discord server since the start",
 				"picture": "https://cdn.samtendo.net/images/beebs.png"
+			},
+			{
+				"name": "darwwinn",
+				"caption": "UShop development and research",
+				"picture": "https://github.com/darwwinn.png",
+				"github": "https://github.com/darwwinn"
 			}
 		]
 	},
