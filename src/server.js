@@ -18,6 +18,7 @@ const logger = require('./logger');
 const { http: { port } } = config;
 const app = express();
 // const stripe = new Stripe(config.stripe.secret_key);
+app.locals.adSenseId = config.googleAdSenseId;
 
 app.set('trust proxy', true); // TODO - Make this configurable
 

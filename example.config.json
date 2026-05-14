@@ -46,5 +46,6 @@
 		"api_token": "api_token",
 		"board_name": "board_name"
 	},
-	"api_base": "https://api.domain.com"
+	"api_base": "https://api.domain.com",
+	"googleAdSenseId": "YOUR_ADSENSE_ID_HERE"
 }
