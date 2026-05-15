@@ -133,11 +133,6 @@
 				"picture": "https://cdn.samtendo.net/images/grimvortex.png"
 			},
 			{
-				"name": "Hauber",
-				"caption": "Samverse moderator + German translations",
-				"picture": "https://cdn.samtendo.net/images/hauber.png"
-			},
-			{
 				"name": "Senne",
 				"caption": "Support agent",
 				"picture": "https://cdn.samtendo.net/images/senne.png"
@@ -157,12 +152,6 @@
 				"name": "Grimvortex",
 				"caption": "Server provider + German translations",
 				"picture": "https://cdn.samtendo.net/images/grimvortex.png"
-			},
-			{
-				"name": "Hauber",
-				"caption": "German translations",
-				"picture": "https://cdn.samtendo.net/images/hauber.png",
-				"github": "https://hauberdevs.com/"
 			},
 			{
 				"name": "The community",
