@@ -241,6 +241,10 @@
 		"title": "Our progress",
 		"description": "Check the project's progress and goals! (Updated every hour or so, does not reflect ALL project goals or progress)"
 	},
+	"jobsPage": {
+		"title": "Jobs",
+		"description": "Check out our available positions and apply today!"
+	},
 	"blogPage": {
 		"title": "Blog",
 		"description": "The latest updates in condensed chunks. If you want to see more frequent updates, consider <a href=\"/account/upgrade\" target=\"_blank\">supporting us</a>.",

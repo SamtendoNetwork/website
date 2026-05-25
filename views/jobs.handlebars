@@ -1,0 +1,41 @@
+{{#section 'head'}}
+	<link rel="stylesheet" href="/assets/css/progress.css">
+{{/section}}
+
+{{> header}}
+
+<div class="wrapper">
+
+	<div class="progress-hero">
+		<div class="hero-meta reduced-margin">
+			<img src="https://cdn.samtendo.net/images/NewSamtendoCircle.png" alt="Samtendo" class="logo-image" style="height: 128px; width: auto;">
+			<h1 class="title dot">{{ locale.jobsPage.title }}</h1>
+			<p class="text">{{ locale.jobsPage.description }}</p>
+		</div>
+	</div>
+
+	<div class="all-progress-lists">
+		<div id="quick-nav">
+			<h1 class="title dot">Quick Nav</h1>
+			<ul>
+				{{#each progressLists.sections}}
+				<li>
+					<a href="#{{slug this.title}}">{{this.title}}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+		<br>
+		{{#each progressLists.sections}}
+		<div class="purple-card" id="test">
+			test
+		</div>
+		{{/each}}
+	</div>
+
+	{{> footer }}
+
+</div>
+
+{{#section 'foot'}}
+{{/section}}

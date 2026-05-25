@@ -109,11 +109,13 @@ const routes = {
 	blog: require('./routes/blog'),
 	localization: require('./routes/localization'),
 	aprilfools: require('./routes/aprilfools'),
-	try: require('./routes/try')
+	try: require('./routes/try'),
+	jobs: require('./routes/jobs'),
+	verify: require('./routes/verify')
 };
 
 app.use('/', routes.home);
-//app.use('/terms', routes.terms);
+app.use('/terms', routes.terms);
 app.use('/faq', routes.faq);
 app.use('/docs', routes.docs);
 app.use('/progress', routes.progress);
@@ -122,6 +124,8 @@ app.use('/progress', routes.progress);
 //app.use('/blog', routes.blog);
 //app.use('/nso-legacy-pack', routes.aprilfools);
 //app.use('/try', routes.try);
+//app.use('/jobs', routes.jobs);
+app.use('/verify', routes.verify);
 
 logger.info('Creating 404 status handler');
 // This works because it is the last router created
