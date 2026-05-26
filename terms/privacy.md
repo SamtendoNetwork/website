@@ -19,9 +19,9 @@ For the purposes of this Privacy Policy:
 
 - **Account** means a unique account created for You to access Our Service or parts of Our Service.
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
-- **Application** refers to Pretendo Network, the software program provided by the Company.
+- **Application** refers to Samtendo Network, the software program provided by the Company.
 - **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Yesterware LLC.
-- **Country** refers to: Florida, United States
+- **Country** refers to: Birmingham, United Kingdom
 - **Device** means any device that can access the Service such as a computer, a cellphone or digital tablet, or game console.
 - **Personal Data** is any information that relates to an identified or identifiable individual.
 - **Service** refers to the Application.
@@ -31,7 +31,7 @@ For the purposes of this Privacy Policy:
 
 This privacy notice describes how and why We might collect, store, use, and/or share ("**process**") Your information when You use Our services ("**Services**"), such as when You:
 
-- Visit Our website at https://pretendo.network, or any website of Ours that links to this privacy notice
+- Visit Our website at https://samtendo.net, or any website of Ours that links to this privacy notice
 - Download and use Our applications/software, or any other application of Ours that links to this privacy notice
 - Engage with Us in other related ways, including any sales, marketing, or events
 
@@ -114,13 +114,9 @@ The information We collect includes:
 - *Device Data.* We may collect data about the device You use to access the Services. Depending on the device used, this device data may include information such as Your IP address (or proxy server), device and application identification numbers (console serial numbers), location, browser type, hardware model, and system configuration information. This data is uses for moderation and to ensure valid clients are reaching the expected Services.
 - *Location Data.* We do not collect location data, either either precise or imprecise, directly. Games may at times send location based data, for the intent of geolocation and region locking purposes, however this is not stored or processed by Our Services.
 
-Pretendo Network uses various 3rd party services as part of Our infrastructure. These 3rd parties may collect additional information outside of our control, but are required for the operation of Our Services. Please refer to the relevant parties policies:
+Samtendo Network uses various 3rd party services as part of Our infrastructure. These 3rd parties may collect additional information outside of our control, but are required for the operation of Our Services. Please refer to the relevant parties policies:
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
-- [Bunny](https://bunny.net/privacy/)
-- [Discourse](https://www.discourse.org/privacy)
-- [Stripe](https://stripe.com/privacy)
-- [Mastodon](https://mastodon.pretendo.network/privacy-policy)
 
 ### 2. How Do We Process Your Information?
 
@@ -180,7 +176,7 @@ In some exceptional cases, We may be legally permitted under applicable law to p
 We may need to share Your personal information in the following situations:
 
 - **Other Users.** When You share personal information (for example, by posting comments, contributions, or other content to the Services) or otherwise interact with public areas of the Services, such personal information may be viewed by all users and may be publicly made available outside the Services in perpetuity. Similarly, other users will be able to view descriptions of Your activity, communicate with You within Our Services, and view Your profile.
-- **3rd Parties.** When using Our Services, Your data may be automatically collected by the various 3rd party services in use as part of Our infrasture. Pretendo Network does not share or sell Your data to these 3rd parties. The data collected is automatic, through normal usage of Our Services and is required for the operation of Our Services.
+- **3rd Parties.** When using Our Services, Your data may be automatically collected by the various 3rd party services in use as part of Our infrasture. Samtendo Network does not share or sell Your data to these 3rd parties. The data collected is automatic, through normal usage of Our Services and is required for the operation of Our Services.
 
 ### 5. Do We Use Cookies and Other Tracking Technologies?
 
@@ -192,7 +188,7 @@ We may use cookies and similar tracking technologies (like web beacons and pixel
 
 ***In Short:*** *We may transfer, store, and process Your information in countries other than Your own.*
 
-We operate servers in various countries, including in the United States and Germany. If You are accessing Our Services from outside of the countries where Our Services are operating, please be aware that Your information may be transferred to, stored, and processed by Us in Our facilities and by those third parties with whom We may share Your personal information (see "[When and With Whom Do We Share Your Personal Information?](#4-when-and-with-whom-do-we-share-your-personal-information)" above), in and other countries.
+We operate servers in various countries, including in the United States and United Kingdom. If You are accessing Our Services from outside of the countries where Our Services are operating, please be aware that Your information may be transferred to, stored, and processed by Us in Our facilities and by those third parties with whom We may share Your personal information (see "[When and With Whom Do We Share Your Personal Information?](#4-when-and-with-whom-do-we-share-your-personal-information)" above), in and other countries.
 
 If You are a resident in the European Economic Area (EEA) or United Kingdom (UK), then these countries may not necessarily have data protection laws or other similar laws as comprehensive as those in Your country. However, We will take all necessary measures to protect Your personal information in accordance with this privacy notice and applicable law.
 
@@ -401,7 +397,7 @@ Upon receiving Your request, We will respond without undue delay, but in all cas
 
 *Right to appeal*
 
-If We decline to take action regarding Your request, We will inform You of Our decision and reasoning behind it. If You wish to appeal Our decision, please email Us at privacy@pretendo.network. Within sixty (60) days of receipt of an appeal, We will inform You in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If Your appeal if denied, You may contact the [Attorney General to submit a complaint](https://www.oag.state.va.Us/consumer-protection/index.php/file-a-complaint).
+If We decline to take action regarding Your request, We will inform You of Our decision and reasoning behind it. If You wish to appeal Our decision, please email Us at gdpr@samtendo.net. Within sixty (60) days of receipt of an appeal, We will inform You in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If Your appeal if denied, You may contact the [Attorney General to submit a complaint](https://www.oag.state.va.Us/consumer-protection/index.php/file-a-complaint).
 
 ### 13. Do We Make Updates to This Notice?
 
@@ -417,4 +413,4 @@ We may update this Privacy Policy from time to time. We will notify You of any c
 
 If You have any questions about this policy, You can contact Us:
 
-- By email: privacy@pretendo.network
+- By email: gdpr@samtendo.net
