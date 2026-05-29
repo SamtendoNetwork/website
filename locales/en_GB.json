@@ -119,23 +119,23 @@
 			},
 			{
 				"name": "Beau",
-				"caption": "Head of Communications and Social Media",
+				"caption": "Social Media Manager",
 				"picture": "https://cdn.samtendo.net/images/beau.png"
 			},
 			{
 				"name": "Evie",
-				"caption": "Discord moderator + support agent",
+				"caption": "Graphics designer and artist (Sameow!)",
 				"picture": "https://cdn.samtendo.net/images/evie.png"
 			},
 			{
 				"name": "Grimvortex",
-				"caption": "Server provider + Samverse moderator + German translations",
+				"caption": "Server provider",
 				"picture": "https://cdn.samtendo.net/images/grimvortex.png"
 			},
 			{
-				"name": "Senne",
-				"caption": "Support agent",
-				"picture": "https://cdn.samtendo.net/images/senne.png"
+				"name": "Aep",
+				"caption": "Head of Operations",
+				"picture": "https://github.com/aeplet.png"
 			}
 		]
 	},
@@ -192,20 +192,14 @@
 				"picture": "https://cdn.samtendo.net/images/resarf.png"
 			},
 			{
-				"name": "memaem",
+				"name": "Aep",
 				"caption": "Purchasing domains for Samtendo (and also naming Sameow)",
-				"picture": "https://cdn.samtendo.net/images/memaem.png"
+				"picture": "https://github.com/aeplet.png"
 			},
 			{
 				"name": "beebs",
 				"caption": "Boosting the Discord server since the start",
 				"picture": "https://cdn.samtendo.net/images/beebs.png"
-			},
-			{
-				"name": "darwwinn",
-				"caption": "UShop development and research",
-				"picture": "https://github.com/darwwinn.png",
-				"github": "https://github.com/darwwinn"
 			}
 		]
 	},

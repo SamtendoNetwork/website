@@ -70,7 +70,7 @@ router.get('/:slug', async (request, response, next) => {
 	const postName = request.params.slug;
 
 	if (!/^[0-9-]+$/.test(postName)) {
-		logger.error(`Invalid blog post name name ${postName}`);
+		logger.error(`Invalid blog post name ${postName}`);
 		next();
 		return;
 	}
