@@ -111,7 +111,8 @@ const routes = {
 	aprilfools: require('./routes/aprilfools'),
 	try: require('./routes/try'),
 	jobs: require('./routes/jobs'),
-	verify: require('./routes/verify')
+	verify: require('./routes/verify'),
+	uwu: require('./routes/uwu')
 };
 
 app.use('/', routes.home);
@@ -126,6 +127,7 @@ app.use('/progress', routes.progress);
 //app.use('/try', routes.try);
 //app.use('/jobs', routes.jobs);
 app.use('/verify', routes.verify);
+app.use('/uwu', routes.uwu);
 
 logger.info('Creating 404 status handler');
 // This works because it is the last router created
