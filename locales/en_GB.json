@@ -135,7 +135,8 @@
 			{
 				"name": "Aep",
 				"caption": "Head of Operations",
-				"picture": "https://github.com/aeplet.png"
+				"picture": "https://github.com/aeplet.png",
+				"github": "https://github.com/aeplet"
 			}
 		]
 	},
