@@ -14,24 +14,230 @@
 		</div>
 	</div>
 
-	<div class="all-progress-lists">
-		<div id="quick-nav">
-			<h1 class="title dot">Quick Nav</h1>
-			<ul>
-				{{#each progressLists.sections}}
-				<li>
-					<a href="#{{slug this.title}}">{{this.title}}</a>
-				</li>
-				{{/each}}
-			</ul>
-		</div>
-		<br>
-		{{#each progressLists.sections}}
-		<div class="purple-card" id="test">
-			test
-		</div>
-		{{/each}}
-	</div>
+	<div id="samtendo-jobs" class="jobs-container">
+  <style>
+    .jobs-container {
+      color: #e5e7eb;
+      background: transparent;
+      padding: 2rem 0;
+    }
+
+    .jobs-header {
+      margin-bottom: 2rem;
+    }
+
+    .jobs-header h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 0.5rem 0;
+      color: #f3f4f6;
+      letter-spacing: -0.5px;
+    }
+
+    .jobs-header p {
+      font-size: 14px;
+      color: #9ca3af;
+      margin: 0;
+    }
+
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .job-card {
+      background: #3386b3;
+      border: 1px solid #3890be;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 200ms ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .job-card:hover {
+      border-color: #307ea8;
+      background: #368bb9;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .job-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 0.5rem 0;
+      color: #f3f4f6;
+    }
+
+    .job-meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 13px;
+    }
+
+    .job-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #9ca3af;
+    }
+
+    .job-meta-badge {
+      background: rgba(59, 130, 246, 0.1);
+      color: #4ABFFF;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .job-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .job-footer {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .job-apply-btn {
+      flex: 1;
+      background: #4ABFFF;
+      color: white;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 150ms ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .job-apply-btn:hover {
+      background: #3385b1;
+      transform: translateY(-1px);
+    }
+
+    .job-apply-btn:active {
+      transform: translateY(0);
+    }
+
+    .jobs-loading {
+      text-align: center;
+      padding: 2rem;
+      color: #ffffff;
+    }
+
+    .jobs-error {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #fca5a5;
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .jobs-empty {
+      text-align: center;
+      padding: 2rem;
+      color: #ffffff;
+    }
+
+    @media (max-width: 640px) {
+      .jobs-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .jobs-container {
+        padding: 1.5rem 0;
+      }
+    }
+  </style>
+
+  <div id="jobs-content" class="jobs-loading">
+    Loading positions...
+  </div>
+</div>
+
+<script>
+  (function() {
+    const container = document.getElementById('jobs-content');
+    const url = 'https://zsedhexssnhfqwpmtjmr.supabase.co';
+    const key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzZWRoZXhzc25oZnF3cG10am1yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA3NDgzODAsImV4cCI6MjA5NjMyNDM4MH0.sbJamOw05cNbOZ29ausoxEY1xfjvpCmS7jhPAtZnzmA';
+    // ^^ Yes, we know our api key is exposed.
+	// ^^ No, you are not a master hacker for using Ctrl+U.
+	// ^^ No, you cannot hack us with it. You can try tho ;)
+	const tableName = 'jobs';
+
+    async function fetchJobs() {
+      try {
+        if (!url || !key) {
+          container.innerHTML = '<div class="jobs-error">Configuration error: Supabase credentials not set</div>';
+          return;
+        }
+
+        const response = await fetch(
+          `${url}/rest/v1/${tableName}?order=created_at.desc`,
+          {
+            headers: {
+              'apikey': key,
+              'Authorization': `Bearer ${key}`,
+            },
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const jobs = await response.json();
+
+        if (!jobs || jobs.length === 0) {
+          container.innerHTML = '<div class="jobs-empty">No open positions at the moment. Check back soon!</div>';
+          return;
+        }
+
+        const html = jobs.map(job => `
+          <div class="job-card">
+            <h3 class="job-title">${escapeHtml(job.title)}</h3>
+            <p class="job-description">${escapeHtml(job.description)}</p>
+            <div class="job-footer">
+              <a href="${escapeHtml(job.application_url)}" class="job-apply-btn" target="_blank" rel="noopener">
+                Apply now
+              </a>
+            </div>
+          </div>
+        `).join('');
+
+        container.innerHTML = `<div class="jobs-grid">${html}</div>`;
+      } catch (error) {
+        console.error('Failed to load jobs:', error);
+        container.innerHTML = '<div class="jobs-error">Could not load positions. Please try again later.</div>';
+      }
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    fetchJobs();
+  })();
+</script>
+
 
 	{{> footer }}
 

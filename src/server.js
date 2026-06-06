@@ -125,7 +125,7 @@ app.use('/progress', routes.progress);
 //app.use('/blog', routes.blog);
 //app.use('/nso-legacy-pack', routes.aprilfools);
 //app.use('/try', routes.try);
-//app.use('/jobs', routes.jobs);
+app.use('/jobs', routes.jobs);
 app.use('/verify', routes.verify);
 app.use('/uwu', routes.uwu);
 
