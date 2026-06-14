@@ -67,8 +67,8 @@
 				"answer": "We work on new games once we feel that our backend libraries are ready to support it, and there is developer time available to maintain it. A lot of our work goes into stabilising and completing our existing games - we want to get the best experience possible in those before we move on to new titles. Since new work comes up all the time, we cannot make any estimate of when that would be."
 			},
 			{
-				"question": "Will Samtendo support the Wii/Switch?",
-				"answer": "The Wii already has custom servers provided by <a href=\"https://wiimmfi.de/\" target=\"_blank\">Wiimmfi</a>. We currently do not wish to target the Switch as it is both paid and completely different to Nintendo Network."
+				"question": "Will Samtendo support the Wii?",
+				"answer": ":P"
 			},
 			{
 				"question": "Will I need hacks to connect?",
