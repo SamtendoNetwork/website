@@ -5,7 +5,7 @@ const tokenInput = document.querySelector('#token');
 document.querySelector('form').addEventListener('submit', function (event) {
 	event.preventDefault();
 
-	fetch('https://api.pretendo.cc/v1/reset-password', {
+	fetch('https://api.samtendo.net/v1/reset-password', {
 		method: 'POST',
 		headers: {
 			'Accept': 'application/json',
