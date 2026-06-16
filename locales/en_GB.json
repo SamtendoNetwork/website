@@ -265,8 +265,8 @@
 		"forgotPassword": {
 			"submit": "Submit",
 			"header": "Forgot Password",
-			"sub": "Enter your e-mail address/PNID below",
-			"input": "E-mail address or PNID"
+			"sub": "Enter your e-mail address/SNID below",
+			"input": "E-mail address or SNID"
 		},
 		"resetPassword": {
 			"header": "Reset Password",
@@ -304,16 +304,16 @@
 				"linkDiscord": "Link Discord account",
 				"newsletter": "Newsletter",
 				"newsletterPrompt": "Receive project updates via e-mail (you can opt-out at any time)",
-				"passwordPrompt": "Enter your PNID password to download Cemu files",
+				"passwordPrompt": "Enter your SNID password to download Cemu files",
 				"no_signins_notice": "Sign in history not currently tracked. Check back again later!",
 				"no_newsletter_notice": "Newsletter not currently available. Check back again later",
 				"upgradePrompt": "Beta servers are exclusive to beta testers.<br>To become a beta tester, upgrade to a higher account tier.",
-				"no_edit_from_dashboard": "Editing PNID settings from the user dashboard is currently unavailable. Please update user settings from your linked game console"
+				"no_edit_from_dashboard": "Editing SNID settings from the user dashboard is currently unavailable. Please update user settings from your linked game console"
 			},
 			"delete": {
 				"button": "Delete Account",
-				"modalTitle": "Delete PNID",
-				"modalDescription": "Are you sure you want to delete your PNID? Please consider the following before deletion:\n\nYour account data across all Samtendo Network services (this includes Forum and Juxtaposition) will be erased.\nYour Stripe data and subscription will be automatically deleted.\nYou will not be able to use the same PNID on a new account in the future.\nDeleting an account does not solve issues with bans or technical support. If you have an issue please use the Forum for assistance.",
+				"modalTitle": "Delete SNID",
+				"modalDescription": "Are you sure you want to delete your SNID? Please consider the following before deletion:\n\nYour account data across all Samtendo Network services (this includes Forum and Juxtaposition) will be erased.\nYour Stripe data and subscription will be automatically deleted.\nYou will not be able to use the same SNID on a new account in the future.\nDeleting an account does not solve issues with bans or technical support. If you have an issue please use the Forum for assistance.",
 				"modalCaution": "This action cannot be undone.",
 				"modalConfirm": "Yes, delete"
 			}

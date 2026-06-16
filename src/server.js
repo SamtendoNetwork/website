@@ -120,7 +120,7 @@ app.use('/terms', routes.terms);
 app.use('/faq', routes.faq);
 app.use('/docs', routes.docs);
 app.use('/progress', routes.progress);
-//app.use('/account', routes.account);
+app.use('/account', routes.account);
 //app.use('/localization', routes.localization);
 //app.use('/blog', routes.blog);
 //app.use('/nso-legacy-pack', routes.aprilfools);
