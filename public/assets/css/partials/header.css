@@ -120,8 +120,8 @@ header nav a.donate button {
 	align-items: center;
 	gap: 4px;
 	font-weight: bold;
-	background: #332b61;
-	color: var(--accent-shade-3);
+	background: #4ABFFF;
+	color: #FFFFFF;
 	padding: 2px 12px;
 	border-radius: 24px;
 }
@@ -131,7 +131,7 @@ header nav a.donate button svg {
 }
 header nav a.donate button:hover {
 	background: var(--accent-shade-0);
-	color: #fff;
+	color: #ffffff;
 }
 header nav a.donate button.dropdown-button::after {
 	content: "";

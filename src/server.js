@@ -8,7 +8,7 @@ const handlebars = require('express-handlebars');
 const morgan = require('morgan');
 const expressLocale = require('express-locale');
 const cookieParser = require('cookie-parser');
-// const Stripe = require('stripe');
+const Stripe = require('stripe');
 const config = require('./config');
 const redirectMiddleware = require('./middleware/redirect');
 const renderDataMiddleware = require('./middleware/render-data');
@@ -17,7 +17,7 @@ const logger = require('./logger');
 
 const { http: { port } } = config;
 const app = express();
-// const stripe = new Stripe(config.stripe.secret_key);
+const stripe = new Stripe(config.stripe.secret_key);
 app.locals.adSenseId = config.googleAdSenseId;
 
 app.set('trust proxy', true); // TODO - Make this configurable
