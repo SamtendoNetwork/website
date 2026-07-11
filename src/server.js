@@ -112,7 +112,8 @@ const routes = {
 	try: require('./routes/try'),
 	jobs: require('./routes/jobs'),
 	verify: require('./routes/verify'),
-	uwu: require('./routes/uwu')
+	uwu: require('./routes/uwu'),
+	donate: require('./routes/donate')
 };
 
 app.use('/', routes.home);
@@ -128,7 +129,7 @@ app.use('/account', routes.account);
 app.use('/jobs', routes.jobs);
 app.use('/verify', routes.verify);
 app.use('/uwu', routes.uwu);
-
+app.use('/donate', routes.donate);
 logger.info('Creating 404 status handler');
 // This works because it is the last router created
 // Meaning the request could not find a valid router

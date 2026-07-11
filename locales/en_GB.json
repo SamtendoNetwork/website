@@ -346,7 +346,7 @@
 	},
 	"donation": {
 		"progress": "<span>£${totd}</span> of <span>£${goald}</span>/month, <span>${perc}%</span> of the monthly goal.",
-		"upgradePush": "To become a subscriber and gain access to cool perks, visit the <a href=\"https://donate.samtendo.net\">donate page</a>."
+		"upgradePush": "To become a subscriber and gain access to cool perks, visit the <a href=\"/donate\">donate page</a>."
 	},
 	"localizationPage": {
 		"title": "Let's localise",
