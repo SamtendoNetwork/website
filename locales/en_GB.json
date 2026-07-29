@@ -29,8 +29,8 @@
 	"hero": {
 		"subtitle": "Bringing people back",
 		"title": "Together",
-		"text1": "The age of getting home to your Wii U and hopping on Minecraft with your friends is over.",
-		"text2": "Samtendo Network is a project that aims to fix that problem by reviving now defunct online servers for the 3DS and Wii U.",
+		"text1": "This is Samtendo Network. We aim to revive most, if not all, of Nintendo Network.",
+		"text2": "We are a small team of volunteers who work on this project in our free time. This is not meant to be a competitor to Pretendo, but an alternative.",
 		"buttons": {
 			"readMore": "Tell me more!"
 		}
@@ -39,7 +39,7 @@
 		"title": "About us",
 		"paragraphs": [
 			"Samtendo Network is a mostly open-source project that aims to recreate Nintendo Network for the 3DS and Wii U using clean-room reverse engineering.",
-			"We are a small team of volunteers who work on this project in our free time. However, our one aim is to bring people back to the couch on Mario Kart 8."
+			"If you want to help out, feel free to open a pull request on any GitHub repository. We really appreciate it!"
 		]
 	},
 	"progress": {
@@ -56,7 +56,7 @@
 			},
 			{
 				"question": "What consoles do you support?",
-				"answer": "As of April 2026, we only support the Nintendo 3DS family of systems. However, support for Wii U is planned to start in late May."
+				"answer": "As of August 2026, we only only support the Wii U. However, we are working day and night on 3DS and Wii support, and we hope to have those ready in the near future."
 			},
 			{
 				"question": "Do you know when feature/service will be ready?",
@@ -113,10 +113,10 @@
 				"github": "https://github.com/sam51210"
 			},
 			{
-				"name": "Resarf",
-				"caption": "Project co-founder",
-				"picture": "https://cdn.samtendo.net/images/resarf.png",
-				"github": "https://github.com/ResarfGaming"
+				"name": "Aep",
+				"caption": "Project co-owner and assistant lead developer",
+				"picture": "https://github.com/aeplet.png",
+				"github": "https://github.com/aeplet"
 			},
 			{
 				"name": "Beau",
@@ -124,20 +124,9 @@
 				"picture": "https://cdn.samtendo.net/images/beau.png"
 			},
 			{
-				"name": "Evie",
-				"caption": "Graphics designer and artist (Sameow!)",
-				"picture": "https://cdn.samtendo.net/images/evie.png"
-			},
-			{
 				"name": "Grimvortex",
 				"caption": "Server provider",
 				"picture": "https://cdn.samtendo.net/images/grimvortex.png"
-			},
-			{
-				"name": "Aep",
-				"caption": "Head of Operations",
-				"picture": "https://github.com/aeplet.png",
-				"github": "https://github.com/aeplet"
 			},
 			{
 				"name": "Faz",
@@ -202,11 +191,6 @@
 				"name": "Aep",
 				"caption": "Purchasing domains for Samtendo (and also naming Sameow)",
 				"picture": "https://github.com/aeplet.png"
-			},
-			{
-				"name": "beebs",
-				"caption": "Boosting the Discord server since the start",
-				"picture": "https://cdn.samtendo.net/images/beebs.png"
 			}
 		]
 	},
