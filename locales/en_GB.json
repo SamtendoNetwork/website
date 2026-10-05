@@ -56,7 +56,7 @@
 			},
 			{
 				"question": "What consoles do you support?",
-				"answer": "As of August 2026, we only only support the Wii U. However, we are working day and night on 3DS and Wii support, and we hope to have those ready in the near future."
+				"answer": "As of October 2026, we support both the Nintendo 3DS and Wii U. We are also working on support for the Wii, but it is not yet ready."
 			},
 			{
 				"question": "Do you know when feature/service will be ready?",
@@ -93,7 +93,7 @@
 			},
 			{
 				"title": "Samverse",
-				"caption": "A Miiverse revival, keeping the original Wii U style but with new features! Check it out at samverse.samtendo.net"
+				"caption": "A Miiverse revival, keeping the original style but with new features! (coming soon)"
 			},
 			{
 				"title": "Unique platform support",
@@ -119,19 +119,16 @@
 				"github": "https://github.com/aeplet"
 			},
 			{
-				"name": "Beau",
-				"caption": "Social Media Manager",
-				"picture": "https://cdn.samtendo.net/images/beau.png"
+				"name": "Oxygen",
+				"caption": "Miiverse research and development",
+				"picture": "https://cdn.samtendo.net/images/o2.png",
+				"github": "https://github.com/Whatsauser"
 			},
 			{
-				"name": "Grimvortex",
-				"caption": "Server provider",
-				"picture": "https://cdn.samtendo.net/images/grimvortex.png"
-			},
-			{
-				"name": "Faz",
-				"caption": "Head of Support (super cool guy)",
-				"picture": "https://cdn.samtendo.net/images/faz.png"
+				"name": "Null",
+				"caption": "Wii research and development",
+				"picture": "https://github.com/Devnull-l1r.png",
+				"github": "https://github.com/Devnull-l1r"
 			}
 		]
 	},
@@ -191,6 +188,12 @@
 				"name": "Aep",
 				"caption": "Purchasing domains for Samtendo (and also naming Sameow)",
 				"picture": "https://github.com/aeplet.png"
+			},
+			{
+				"name": "Oxygen",
+				"caption": "Very good at development",
+				"picture": "https://cdn.samtendo.net/images/o2.png",
+				"github": "https://github.com/Whatsauser"
 			}
 		]
 	},
