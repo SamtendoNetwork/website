@@ -104,7 +104,7 @@ const routes = {
 	terms: require('./routes/terms'),
 	faq: require('./routes/faq'),
 	docs: require('./routes/docs'),
-	progress: require('./routes/progress'),
+	// progress: require('./routes/progress'),
 	account: require('./routes/account'),
 	blog: require('./routes/blog'),
 	localization: require('./routes/localization'),
@@ -120,12 +120,12 @@ app.use('/', routes.home);
 app.use('/terms', routes.terms);
 app.use('/faq', routes.faq);
 app.use('/docs', routes.docs);
-app.use('/progress', routes.progress);
+// app.use('/progress', routes.progress);
 app.use('/account', routes.account);
-//app.use('/localization', routes.localization);
-//app.use('/blog', routes.blog);
-//app.use('/nso-legacy-pack', routes.aprilfools);
-//app.use('/try', routes.try);
+// app.use('/localization', routes.localization);
+// app.use('/blog', routes.blog);
+// app.use('/nso-legacy-pack', routes.aprilfools);
+// app.use('/try', routes.try);
 app.use('/jobs', routes.jobs);
 app.use('/verify', routes.verify);
 app.use('/uwu', routes.uwu);
