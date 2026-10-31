@@ -32,7 +32,7 @@ const discordOAuth = new DiscordOauth2({
 	version: 'v10'
 });
 
-router.get('/', requireLoginMiddleware, async (request, response) => {
+/* router.get('/', requireLoginMiddleware, async (request, response) => {
 	// Setup the data to be sent to the handlebars renderer
 	const renderData = {};
 
@@ -72,9 +72,9 @@ router.get('/', requireLoginMiddleware, async (request, response) => {
 	}
 
 	response.render('account/account', renderData);
-});
+}); */
 
-router.get('/login', async (request, response) => {
+/* router.get('/login', async (request, response) => {
 	const renderData = {
 		error: request.cookies.error_message,
 		loginPath: '/account/login'
@@ -99,9 +99,9 @@ router.post('/login', async (request, response) => {
 		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account/login');
 	}
-});
+}); */
 
-router.get('/register', async (request, response) => {
+/* router.get('/register', async (request, response) => {
 	const renderData = {
 		email: request.cookies.email,
 		username: request.cookies.username,
@@ -154,7 +154,7 @@ router.post('/register', async (request, response) => {
 		response.cookie('error_message', error.message, { domain: '.samtendo.net' });
 		return response.redirect('/account/register');
 	}
-});
+}); */
 
 router.get('/logout', async (_request, response) => {
 	response.clearCookie('refresh_token', { domain: '.samtendo.net' });
