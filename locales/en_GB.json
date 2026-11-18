@@ -176,12 +176,6 @@
 				"name": "Aep",
 				"caption": "Purchasing domains for Samtendo (and also naming Sameow)",
 				"picture": "https://github.com/aeplet.png"
-			},
-			{
-				"name": "Oxygen",
-				"caption": "Very good at development",
-				"picture": "https://cdn.samtendo.net/images/o2.png",
-				"github": "https://github.com/Whatsauser"
 			}
 		]
 	},
